@@ -1,3 +1,5 @@
+# Модуль для разбора новостной ленты "Риа"
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
