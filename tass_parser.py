@@ -29,7 +29,6 @@ def tass_parser_refs():
 
 def tass_parser_body(ref):
     """Возвращает 3 тыс. символов текста новости в ответ на ее адрес
-    
     https://tass.ru/ref (например, '/politika/7999199')"""
     
     source = requests.get(f'{url}{ref}').text
