@@ -23,7 +23,7 @@ The repository contains the following blocks of program code:
 - app_parser.py - application for parsing all the required news and saving them in the local project database (see SCHEMA);
 - train.csv - labled data set for neural network training;
 - NN.py - neural network;
-- dashboard.pbix - visualized of the result of the NN classifier.
+- dashboard.pbix - visualized of the result of the NN classifier
 
 <b>TARGET STAGE 2</b> - creation of an analytical platform that meets the needs of various businesses in the analysis of their information field
 
