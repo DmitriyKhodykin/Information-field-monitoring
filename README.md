@@ -5,7 +5,7 @@
 
 ![PIPELINE_1](REP_base_pipeline_news.png)
 
-To achieve the goal of the project it is necessary:
+<b>To achieve the goal of the project it is necessary</b>:
 - create a module for parsing news feeds of the most popular news agencies in the country;
 - develop and deploy a database for storing news texts;
 - mark the test data set as many data classes, such as negative or positive news, type of news, news topic, etc.;
@@ -15,7 +15,7 @@ To achieve the goal of the project it is necessary:
 - design the information panel Power BI to visualize the result of the classifier;
 - upload data to the report and deploy it on the local server / in the cloud
 
-The repository contains the following blocks of program code:
+<b>The repository contains the following blocks of program code</b>:
 - tass_parser.py - module for parsing the news feed of the TASS news agency;
 - ria_parser.py - module for parsing the news feed of the RIA news agency;
 - interfax_parser.py - module for parsing the news feed of the INTERFAX news agency;
