@@ -29,3 +29,5 @@ def interfax_parser_refs():
             refs.append(ref.get('href'))
 
     return refs
+
+
