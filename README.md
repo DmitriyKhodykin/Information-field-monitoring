@@ -1,6 +1,9 @@
 # Information-field-monitoring
 ## Parsing news from russian mass media and it content analysis
 
+<b>Summary. In conditions of excessive information flow, it is extremely difficult to compose an objective picture of what is happening exactly as if there was no information at all.
+To assess the objective dynamics of the changes taking place in the information field, it is necessary to squeeze out features from the news flow and reduce it.</b>
+
 <b>TARGET STAGE 1</b> - build a system of multiclass classification of news reflecting the dynamics of changes in the information field in Russia
 
 ![PIPELINE_1](REP_base_pipeline_news.png)
