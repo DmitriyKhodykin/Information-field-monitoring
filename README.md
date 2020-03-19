@@ -31,3 +31,5 @@ To assess the objective dynamics of the changes taking place in the information 
 <b>TARGET STAGE 2</b> - creation of an analytical platform that meets the needs of various businesses in the analysis of their information field
 
 ![PIPELINE_2](REP_commercial_pipeline.png)
+
+<b>Any business exists in conditions of uncertainty. Changes in legislation, consumer preferences, geopolitical environment, etc., have a significant impact on business. With the development of mass communications, a particular impact on the business is provided by the information environment specific to each individual business.</b>
