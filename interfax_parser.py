@@ -20,14 +20,29 @@ def interfax_parser_refs():
     raw_result = soup.find_all_next('a', href=True)
 
     for ref in raw_result:
-        if re.search('[0-9]', ref.get('href')) \
-                and 'http' not in ref.get('href') \
-                and 'photo' not in ref.get('href') \
-                and 'html' not in ref.get('href') \
-                and 'story' not in ref.get('href') \
-                and 'pressreleases' not in ref.get('href'):
+        if re.search('[0-9]', ref.get('href')) and all(
+                elm not in ref.get('href') for elm in [
+                    'http', 'photo', 'html', 'story', 'pressreleases', 'asp', 'aeroflot'
+                ]
+        ):
             refs.append(ref.get('href'))
 
     return refs
 
 
+def interfax_parser_body(ref):
+    """Returns 4 thousand characters of the text of the news"""
+
+    result = str()
+
+    source = requests.get(f'{url}{ref}')
+    source.encoding = 'cp1251'
+    source = source.text
+    soup = Bs(source, 'lxml').find('div', class_='mainblock')
+    raw_result = soup.find_all_next('p')
+
+    for i in raw_result:
+        if len(i.text) > 0:
+            result = result + i.text + ' '
+
+    return result[:4000]
