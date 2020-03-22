@@ -21,21 +21,19 @@ def tass_parser_refs():
     raw_result = soup.find_all_next('a', href=True)
 
     for ref in raw_result:
-        if re.search('[0-9]', ref.get('href')) \
-                and 'http' not in ref.get('href') \
-                and 'press' not in ref.get('href'):
+        if re.search('[0-9]', ref.get('href')) and all(elm not in ref.get('href') for elm in ['http', 'press']):
             refs.append(ref.get('href'))
 
     return refs
 
 
 def tass_parser_body(ref):
-    """Returns 3 thousand characters of the text of the news in response
-    to its address https://tass.ru/ref (example, '/politika/7999199')"""
+    """Returns 4 thousand characters of the text of the news in response
+    to its address"""
 
     source = requests.get(f'{url}{ref}').text
     soup = Bs(source, 'lxml')
     raw_result = soup.find_all('div', class_='text-content')
-    result = raw_result[0].text[:3000]
+    result = raw_result[0].text[:4000]
 
     return result
