@@ -26,7 +26,7 @@ def ria_parser_refs():
 
 
 def ria_parser_body(ref):
-    """Returns 3 thousand characters of the text of the news
+    """Returns 4 thousand characters of the text of the news
     in response to its address"""
 
     result = str()
@@ -38,4 +38,4 @@ def ria_parser_body(ref):
     for i in raw_result:
         result = result + i.text + ' '
 
-    return result[:3000]
+    return result[:4000]
