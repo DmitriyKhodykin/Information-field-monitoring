@@ -19,11 +19,9 @@ To assess the objective dynamics of the changes taking place in the information 
 - upload data to the report and deploy it on the local server / in the cloud
 
 <b>The repository contains the following blocks of program code</b>:
-- tass_parser.py - module for parsing the news feed of the TASS news agency;
-- ria_parser.py - module for parsing the news feed of the RIA news agency;
-- interfax_parser.py - module for parsing the news feed of the INTERFAX news agency;
+- common_parser - module for parsing all the required news;
 - SCHEMA - structure and configuration of a relational database for storing project data;
-- app_parser.py - application for parsing all the required news and saving them in the local project database (see SCHEMA);
+- push_news_todb.py - module for saving texts of news in the local project database (see SCHEMA);
 - train.csv - labled data set for neural network training;
 - NN.py - neural network;
 - dashboard.pbix - visualized of the result of the NN classifier
