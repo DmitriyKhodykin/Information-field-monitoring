@@ -10,6 +10,7 @@ import time
 
 
 class Parser:
+    """Parsing news from most popula"""
 
     def __init__(self, url):
         self.url = url
@@ -99,18 +100,24 @@ if __name__ == "__main__":
             'https://www.interfax.ru',
             'https://tass.ru'
                 ]
-        nn = 0
 
         for url in urls:
             parser = Parser(url)
             refs = parser.get_parser_refs()
             for ref in refs:
-                print(
-                    nn,
-                    ref,
-                    parser.get_parser_body(ref)
-                )
-                time.sleep(1)
-                nn = nn + 1
+                if 'ria' in url:
+                    print(
+                        ref,
+                        time.strftime("%Y-%m-%d"),
+                        parser.get_parser_body(ref)
+                    )
+                    time.sleep(1)
+                else:
+                    print(
+                        f'{url}{ref}',
+                        time.strftime("%Y-%m-%d"),
+                        parser.get_parser_body(ref)
+                    )
+                    time.sleep(2)
 
     test()
