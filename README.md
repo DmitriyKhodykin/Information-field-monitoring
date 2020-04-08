@@ -20,10 +20,10 @@ To assess the objective dynamics of the changes taking place in the information 
 
 <b>The repository contains the following blocks of program code</b>:
 - parser:
- - common_parser - module for parsing all the required news;
- - push_news_todb.py - module for saving texts of news in the local project database (see SCHEMA);
+= common_parser - module for parsing all the required news;
+= push_news_todb.py - module for saving texts of news in the local project database (see SCHEMA);
 - db:
- - SCHEMA - structure and configuration of a relational database for storing project data;
+= SCHEMA - structure and configuration of a relational database for storing project data;
 - train.csv - labled data set for neural network training;
 - NN.py - neural network;
 - dashboard.pbix - visualized of the result of the NN classifier
