@@ -31,7 +31,7 @@ To assess the objective dynamics of the changes taking place in the information 
 * NN.py - neural network;
 * dashboard.pbix - visualized of the result of the NN classifier
 
-### Step 1 - Sample of data clusterization (kmeans)
+### Step 1 - Data Clustering Sample (kmeans)
 
 ![PIPELINE_2](/pics/kmeans_news_clusters.png)
 
