@@ -24,9 +24,16 @@ To assess the objective dynamics of the changes taking place in the information 
     + push_news_todb.py - module for saving texts of news in the local project database (see SCHEMA);
 * db:
     + SCHEMA - structure and configuration of a relational database for storing project data;
+* data_prep (trials for train.csv):
+    + data_sample.xlsx - data for training classifiers;
+    + kmeans_clusterization_news.ipynb - attempt to cluster data by the kmeans method;
 * train.csv - labled data set for neural network training;
 * NN.py - neural network;
 * dashboard.pbix - visualized of the result of the NN classifier
+
+### Step 1 - Sample of data clusterization (kmeans)
+
+![PIPELINE_2](/pics/kmeans_news_clusters.png)
 
 <b>TARGET STAGE 2</b> - creation of an analytical platform that meets the needs of various businesses in the analysis of their information field
 
